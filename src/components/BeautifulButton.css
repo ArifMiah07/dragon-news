@@ -1,0 +1,48 @@
+.beautiful-button {
+    background: linear-gradient(45deg, #e2ff9a, #cffac4, #e0cdf9, #d1edff); /* Multi-color gradient background */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 12px 24px;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.5) inset; /* Glowing border */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .beautiful-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent); /* Gradient animation */
+    transition: all 0.5s ease;
+    border-radius: 12px;
+  }
+  
+  .beautiful-button:hover:before {
+    left: 125%;
+  }
+  
+  .beautiful-button span {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .beautiful-button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.9) inset; /* Glowing border on hover */
+  }
+  
+  .beautiful-button:active {
+    background: linear-gradient(45deg, #ffe7d1, #f9edcd, #fad0c4, #ff9a9e); /* Gradient color on active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
